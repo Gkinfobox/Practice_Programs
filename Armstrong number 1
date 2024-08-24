@@ -1,0 +1,36 @@
+public class Armstrongno1 {
+	
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter the number: ");
+		int n = s.nextInt();
+		
+		int digit=0, n1=n, rem, sum=0, count=0;
+		
+		while(n>0)
+		{
+			n = n/10;
+			digit++;
+		}
+		
+		n= n1;
+		
+		while(n !=0 )
+		{
+			rem = n%10;
+			sum = (int) (sum + Math.pow(rem, digit));
+			n = n/10;
+		}
+		
+		if(sum == n1 )
+		{
+			System.out.println("The number is Armstrong number");
+		}
+		else
+		{
+			System.out.println("Not an Armstrong number");
+		}
+	}
+}
