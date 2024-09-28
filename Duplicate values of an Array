@@ -1,0 +1,74 @@
+import java.util.*;
+
+public class Dupofarray {
+	
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		
+		// Get the size of the array:
+		
+		System.out.println("Enter array size: ");
+		
+		int n = s.nextInt();
+		
+		int[] a = new int[n];
+		
+		// Get the array values from the user:
+		
+		System.out.println("Enter array values: ");
+		
+		for(int i=0; i<n; i++)
+		{
+			 a[i] = s.nextInt();
+		}
+		
+		//Print the given input for reference:
+		
+		System.out.println("The given values are: ");
+		
+		for (int i=0; i<a.length; i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+
+		System.out.println();
+		
+		//Check the duplicate values: 
+		
+		System.out.println("The duplicate values are: ");
+		
+		//Store the duplicate values into set: 
+		
+		Set s1 = new HashSet();
+		
+		
+		
+		for(int i=0 ; i<a.length; i++)
+		{
+			
+			for (int j=i+1; j<a.length; j++)
+			{
+				if(a[i] == a[j])
+				{
+					s1.add(a[j]);
+				}
+			}
+		}
+		
+		//print the output: 
+		
+		if(s1.isEmpty())
+		{
+			System.out.println("There is no duplicate values");
+		}
+		else
+		{
+			System.out.println(s1);
+		}
+		
+		s.close();
+		
+	}
+
+}
