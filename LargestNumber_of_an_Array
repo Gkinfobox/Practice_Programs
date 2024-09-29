@@ -1,0 +1,27 @@
+public class Largestnum {
+	
+	public static void main(String[] args) {
+
+    //Declare a array...
+		
+		int a[] = {10,2,300,40,60};
+
+    // inizialise the first number as largest number for our convinient...
+		
+		int largestnum=a[0];
+
+    // iterate the loop from 0 to last and check the largest number...
+		
+		for(int i=0; i<a.length; i++)
+		{
+			if(a[i] > largestnum)
+			{
+				largestnum = a[i];			}
+		}
+
+    //Print the largest number...
+    
+		System.out.println("The largest number in the array is: "+largestnum);
+	}
+
+}
