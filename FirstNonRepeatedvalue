@@ -1,0 +1,32 @@
+public class Firstnonrpt {
+	
+	public static void main(String[] args) {
+		
+		int a[] = {10,20,30,40,50};
+		
+		boolean nonrepeat = false;
+		
+		for(int i=0; i<a.length; i++)
+		{
+			nonrepeat = false;
+			
+			for (int j=i+1; j<a.length; j++)
+			{
+				if( a[i] == a[j])
+				{
+					nonrepeat = true;
+					break;
+				}
+			}
+		
+		
+			if(!nonrepeat)
+			{
+				System.out.println("output is: "+ a[i]);
+				break;
+			}
+		
+		}
+	}
+
+}
