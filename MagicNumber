@@ -1,0 +1,33 @@
+public class Magicnumber {
+	
+	public static void main(String[] args) {
+		
+		int n = 28;
+		
+		int rem,sum=0,result=0;
+		
+		while(n>0)
+		{
+			rem = n%10;
+			sum+= rem;
+			n = n/10;
+		}
+		
+		while (sum>0)
+		{
+			rem = sum%10;
+			result += rem;
+			sum /= 10;
+		}
+		
+		if(result == 1 || result == 10)
+		{
+			System.out.println("Magic number");
+		}
+		else
+		{
+			System.out.println("Not a magic number");
+		}
+	}
+
+}
