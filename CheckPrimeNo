@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Checkprime {
+
+    public static void main (String args[]) {
+
+          Scanner s = new Scanner(System.in);
+
+          System.out.println(" Enter the number : ");
+
+          int n = s.nextInt();
+
+          int j=0;
+
+          for (int i=1; i<=n; i++)
+          {
+              if( n%i == 0 )
+              {
+                  j++;
+              }
+          }
+
+          if (j==2)
+          {
+              System.out.println("The Given number PRIME number");
+          }
+          else
+          {
+              System.out.println("The given number is not PRIME number");
+          }
+      }
+}
