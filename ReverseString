@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Rev {
+
+    public static void main (String args[]) {
+
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter the Word:" );
+
+        String word = s.nextLine();
+
+        System.out.println("The reversed word is: ");
+
+        for( int i=word.length()-1; i>=0; i--)
+        {
+
+              System.out.print(word.CharAt(i));
+
+        }
+
+    }
+}
